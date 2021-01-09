@@ -87,6 +87,8 @@ body {
     align-items: center; }
   .user-nav > *:hover {
     background-color: var(--color-grey-light-2); }
+  .user-nav__icon-box {
+    position: relative; }
   .user-nav__icon {
     height: 2.25rem;
     width: 2.25rem;
@@ -95,9 +97,15 @@ body {
     font-size: .8rem;
     height: 1.75rem;
     width: 1.75rem;
-    border-radius: 50%;
+    border-radius: 100px;
     background-color: var(--color-primary);
-    color: #fff; }
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .user-nav__user-photo {
     height: 3.75rem;
     border-radius: 50%; }
