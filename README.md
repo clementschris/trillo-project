@@ -4,4 +4,4 @@
 
 >> The link to view the main project is: https://clementschris.github.io/trillo-project/
 
-Link currently not working! Please check back soon.
+Work in progress. Please be kind!! Project not yet finished. 
