@@ -364,7 +364,7 @@ body {
     top: 0; }
   .btn:focus {
     outline: none;
-    animation: pulsate 1s infinte; }
+    animation: pulsate 1s infinite; }
 
 .container {
   max-width: 120rem;
