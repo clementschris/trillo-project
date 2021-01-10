@@ -335,11 +335,36 @@ body {
 .btn {
   font-size: 1.5rem;
   font-weight: 300;
-  text-decoration: uppercase;
+  text-transform: uppercase;
   border-radius: 100px;
   border: none;
   background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
-  color: #fff; }
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; }
+  .btn > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    transition: all .2s; }
+  .btn__visible {
+    padding: 2rem 7.5rem; }
+  .btn__invisible {
+    position: absolute;
+    padding: 2rem 0;
+    left: 0;
+    top: -100%; }
+  .btn:hover {
+    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark)); }
+  .btn:hover .btn__visible {
+    transform: translateY(100%); }
+  .btn:hover .btn__invisible {
+    top: 0; }
+  .btn:focus {
+    outline: none;
+    animation: pulsate 1s infinte; }
 
 .container {
   max-width: 120rem;
